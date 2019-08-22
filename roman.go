@@ -10,6 +10,7 @@ func roman(num int) string {
 		if num >= ab[i] {
 			result = result + rm[i]
 			num = num - ab[i]
+			i--
 		}
 	}
 	return result
